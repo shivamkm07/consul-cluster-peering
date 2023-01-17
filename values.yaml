@@ -1,0 +1,9 @@
+global:
+  name: consul
+  image: "hashicorp/consul:1.14.1"
+  peering:
+    enabled: true
+  tls:
+    enabled: true
+meshGateway:
+  enabled: true

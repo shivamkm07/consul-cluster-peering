@@ -1,0 +1,14 @@
+apiVersion: consul.hashicorp.com/v1alpha1
+kind: ServiceIntentions
+metadata:
+  name: any
+spec:
+  destination:
+    name: "*"
+  sources:
+   - name: "*"
+     action: allow
+     peer: cluster-02
+  #  - name: frontend
+  #    action: deny
+  #    peer: cluster-02 ## The peer of the source service
